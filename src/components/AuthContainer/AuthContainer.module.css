@@ -1,0 +1,175 @@
+.container {
+  background-image: url('../../assets/images/mob/background_element_sign_in_mob.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-image: url('/src/assets/images/mob/Dark_theme_bottle_home_screen_mobile.avif');
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../assets/images/mob/background_element_sign_in_mob@2x.png');
+  }
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background-image: url('/src/assets/images/mob/Dark_theme_background_sign_in_mobile_2x.avif');
+    }
+  }
+}
+
+.darkFrame {
+  display: none;
+}
+
+.frame {
+  text-align: center;
+  width: 280px;
+  object-fit: cover;
+  filter: drop-shadow(0px 4px 8px rgba(65, 67, 71, 0.282));
+}
+
+@media (prefers-color-scheme: dark) {
+  .frame {
+    display: none;
+  }
+  .darkFrame {
+    display: flex;
+    text-align: center;
+    width: 280px;
+    object-fit: cover;
+    filter: drop-shadow(0px 4px 8px rgba(236, 242, 255, 0.294));
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: relative;
+    z-index: 1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 32px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-image: url('../../assets/images/tablet/background-signin-1x.png');
+    z-index: -1;
+  }
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background-image: url('/src/assets/images/tablet/Dark_theme_background_sign_in_tablet.avif');
+    }
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .container {
+      background-image: url('../../assets/images/tablet/background-signin-2x.png');
+    }
+    @media (prefers-color-scheme: dark) {
+      .container {
+        background-image: url('/src/assets/images/tablet/Dark_theme_background_sign_in_tablet_2x.avif');
+      }
+    }
+  }
+
+  .frame {
+    width: 736px;
+    height: 548px;
+    position: relative;
+    left: -290px;
+    z-index: 0;
+    object-fit: contain;
+    margin-top: 52px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .frame {
+      display: none;
+    }
+    .darkFrame {
+      display: flex;
+      text-align: center;
+      width: 736px;
+      height: 548px;
+      position: relative;
+      left: -290px;
+      z-index: 0;
+      object-fit: contain;
+      margin-top: 52px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .frame {
+    width: 916px;
+    height: 618px;
+    right: 51px;
+    left: 0;
+    margin-top: 0;
+  }
+
+  .container {
+    flex-direction: row-reverse;
+    background-image: url('../../assets/images/desktop/Background-signin-1x.png');
+  }
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background-image: url('/src/assets/images/desktop/Dark_theme_bubbles_Background_element_Main_Page_desktop.avif');
+    }
+    .frame {
+      display: none;
+    }
+    .darkFrame {
+      display: flex;
+      text-align: center;
+      width: 916px;
+      height: 618px;
+      position: relative;
+      right: 51px;
+      left: 0;
+      z-index: 0;
+      object-fit: contain;
+      margin-top: o;
+    }
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .container {
+      background-image: url('../../assets/images/desktop/Background-signin-2x.png');
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    .container {
+      background-image: url('/src/assets/images/desktop/Dark_theme_bubbles_Background_element_Main_Page_desktop_2x.avif');
+    }
+  }
+
+  .modal {
+    margin-right: 198px;
+    width: 384px;
+  }
+}

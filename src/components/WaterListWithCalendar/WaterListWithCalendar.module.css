@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  max-width: 280px;
+  padding: 24px 12px;
+  background-color: #ecf2ff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(236, 242, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.todayText {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #2f2f2f;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.waterList {
+  margin-bottom: 24px;
+  height: 212px;
+}
+
+.addButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  fill: #407bff;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+}
+.addButton:hover .icon {
+  transform: rotate(0deg);
+  transition-delay: 0;
+  transition: all 0.5s;
+}
+
+.addButton {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: none;
+  color: #407bff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+  line-height: 1;
+  padding: 0;
+  outline: none;
+}
+
+.addButton:hover {
+  scale: 1.2;
+  filter: drop-shadow(3px -2px 2px rgba(64, 123, 255, 0.34));
+}
+
+.addButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.addText {
+  color: #407bff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.emptyContainer {
+  height: 200px;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding: 32px 24px;
+    border-radius: 16px;
+  }
+
+  .todayText {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+  .addText {
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 5px;
+  }
+  .addButton {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 592px;
+    border-radius: 20px;
+  }
+  .addText {
+    margin-top: 3px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #1F2438;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+  .todayText {
+    color: #fff;
+  }
+  .addButton:hover {
+    scale: 1.2;
+    filter: drop-shadow(6px -4px 2px rgba(0, 0, 0, 0.8));
+  }
+  .icon {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+  }
+  .addButton:hover .icon {
+    transform: rotate(0deg);
+    transition-delay: 0;
+    transition: all 0.5s;
+  }
+}

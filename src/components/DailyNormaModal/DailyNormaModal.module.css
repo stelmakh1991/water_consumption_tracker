@@ -1,0 +1,172 @@
+.modalContent {
+  width: 256px;
+}
+
+svg[class="icon-x"] {
+  fill: #407BFF;
+  transform: rotate(360deg);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+}
+svg[class="icon-x"]:hover {
+  scale: 1.3;
+  transform: rotate(0deg);
+  transition-delay: 0;
+  transition: all 0.5s;
+  filter: drop-shadow(2px -2px 2px #233d73);
+}
+
+.textBlue {
+  color: #407BFF;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.formulaWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.formulaLabel {
+  color: #2F2F2F;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.descriptionContainer {
+  padding: 10px;
+  border: 1px solid #D7E3FF;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.descriptionText {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #8F8F8F;
+}
+
+.calcutatorTitle {
+  color: #2F2F2F;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.btnSave {
+  width: 100%;
+  border-radius: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  margin-top: 24px;
+  padding: 10px 30px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  background: #407bff;
+  box-shadow: 0 4px 8px 0 rgba(64, 123, 255, 0.34);
+}
+.btnSave:hover {
+  scale: 1.01;
+  box-shadow: 0 4px 14px 0 rgba(64, 123, 255, 0.54);
+}
+.errorMessage {
+  margin: 0;
+  color: #d8000c;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.genderWrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.genderLabel,
+.fieldLabel,
+.resultLabel {
+  color: #2F2F2F;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.genderInput {
+  color: #407BFF;
+  margin-right: 8px;
+}
+
+.fieldWrapper,
+.resultWrapper {
+  margin-bottom: 16px;
+}
+
+.fieldInput,
+.resultInput {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .btnSave {
+    display: block;
+    width: 160px;
+    line-height: 24px;
+    font-size: 18px;
+    margin-left: auto;
+  }
+
+  .modalContent {
+    width: 656px;
+  }
+
+  .formulaWrap {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modalContent {
+    width: 544px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .formulaLabel,
+  .calcutatorTitle,
+  .genderLabel,
+  .fieldLabel,
+  .resultLabel  {
+    color: #D5DFF5;
+  }
+  .btnSave {
+    color: #1c1d26;
+  }
+  .btnSave:hover {
+    box-shadow: 2px 4px 10px 2px rgba(30, 108, 244, 0.34);
+    border: 2px solid #233d73;
+  }
+  svg[class="icon-x"] {
+    fill: #5082F2;
+    transform: rotate(360deg);
+	  transition: all 0.5s;
+	  transition-timing-function: cubic-bezier(1, 0.8, 0.5, 1);
+  }
+  svg[class="icon-x"]:hover {
+    fill: #D5DFF5;
+    transform: rotate(0deg);
+	  transition-delay: 0;
+	  transition: all 0.5s;
+    filter: drop-shadow(2px -2px 2px #D5DFF5);
+  }
+}

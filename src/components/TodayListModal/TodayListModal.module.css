@@ -1,0 +1,279 @@
+@media (min-width: 1440px) {
+
+  /* Desktop styles */
+  .waterContent {
+    min-width: 544px;
+  }
+
+  .modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  .saveButtonStyle {
+    min-width: 160px;
+    border-radius: 10px;
+    height: 44px;
+  }
+
+  .timeSelectBlock {
+    min-width: 100%;
+  }
+
+  .waterInput {
+    min-width: 100%;
+  }
+
+  .stepInputDown {
+    display: none;
+    align-items: flex-end;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  /* Tablet styles */
+  .waterContent {
+    min-width: 656px;
+  }
+
+  .modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+
+  .saveButtonStyle {
+    min-width: 160px;
+    border-radius: 10px;
+    height: 44px;
+  }
+
+  .stepInputDown {
+    display: none;
+    align-items: flex-end;
+
+  }
+
+  .timeSelectBlock {
+    min-width: 100%;
+  }
+
+  .waterInput {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Mobile styles */
+  .waterContent {
+    min-width: 232px;
+
+
+  }
+
+  .saveButtonStyle {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+  }
+}
+
+.namValue {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.editSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.correctData {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.wtUsed {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.recTime {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+/* === Buttons + - === */
+.stepInput {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #407BFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.timeSelectBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 120px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.waterInput {
+
+  margin-top: 16px;
+  max-width: 120px;
+  margin-bottom: 24px;
+}
+
+.roundButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9EBBFF;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #407BFF;
+}
+
+.roundButton:hover {
+  background-color: #e0eaff;
+  scale: 1.1;
+  filter: drop-shadow(0 0 0.75rem #407BFF);
+  color: #407BFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stepInput span {
+  background-color: #D7E3FF;
+  width: 92px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 0 7px;
+  font-size: 16px;
+}
+
+.stepInputDown {
+  display: flex;
+  margin-bottom: 12px;
+  justify-content: center;
+  color: #407BFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.waterInfoContainer {
+  display: flex;
+  align-items: center;
+  width: 254px;
+  height: 52px;
+  padding: 8px 24px;
+  gap: 6px;
+  border-radius: 10px;
+  background-color: #ECF2FF;
+}
+
+.saveButtonStyle {
+  background-color: #407BFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 10px;
+  min-height: 36px;
+}
+
+.saveButtonStyle:hover {
+  scale: 1.01;
+  box-shadow: 0 4px 14px 0 rgba(64, 123, 255, 0.54);
+}
+
+.iconColor {
+  fill: #407BFF;
+}
+
+.waterLooc {
+  color: #407BFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.amPmIndicator {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.amSide {
+  margin-left: 6px;
+}
+
+.error {
+  color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  .stepInput span {
+    background-color: #2A3052;
+    scale: 1.1;
+  }
+  .roundButton:hover {
+    background-color: #2A3052;
+    scale: 1.1;
+    filter: drop-shadow(0 0 0.75rem #D5DFF5);
+    color: #D5DFF5 !important;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .roundButton {
+    color: #5082F2 !important;
+  }
+  .roundButton,
+  .waterInfoContainer,
+  select {
+    background-color: #1c1d26;
+  }
+  .roundButton,
+  select,
+  .waterInput {
+    border: 2px solid #2A3052 !important;
+  }
+  .saveButtonStyle {
+    color: #1c1d26;
+  }
+}
